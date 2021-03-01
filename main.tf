@@ -11,8 +11,8 @@
 resource "local_file" "params" {
 //  content  = template_file.this.rendered
   content = templatefile("${path.module}/src/params.json", {
-        BUCKET_NAME   = var.bucketName
-        BUCKET_KEY    = var.bucketKey
+        AUTH_USER   = var.authUser
+        AUTH_PASSWORD    = var.authPassword
         COOKIE_DOMAIN = var.cookieDomain
   })
 
