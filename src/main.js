@@ -47,9 +47,9 @@ exports.handler = (event, context, callback) => {
 
 function isProtectedURL(path, protectedPaths, unprotectedPaths) {
     let i = 0;
-    let ii = 0;
     for (; i < protectedPaths.length; i++) {
         if (path.match(protectedPaths[i])) {
+            let ii = 0;
             for(; ii < unprotectedPaths.length; ii++) {
                 if (path.match(unprotectedPaths[ii])) {
                     return false;
