@@ -1,5 +1,5 @@
 {
-  "bucketName": "${BUCKET_NAME}",
-  "bucketKey": "${BUCKET_KEY}",
+  "authUser": "${AUTH_USER}",
+  "authPassword": "${AUTH_PASSWORD}",
   "cookieDomain": "${COOKIE_DOMAIN}"
 }
